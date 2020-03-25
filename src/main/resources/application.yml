@@ -1,0 +1,28 @@
+#server:
+ # port: 8090
+  #servlet:
+   # context-path: /jt
+#user:
+ # username: alibaba
+  #age: 15
+  
+  
+spring:
+  profiles: 
+    active: pro
+ 
+---
+spring:
+  profiles: pro
+server:
+  port: 8090
+  servlet:
+    context-path: /jt
+
+---
+spring:
+  profiles: dev
+server:
+  port: 8010
+  servlet:
+    context-path: /jt    
